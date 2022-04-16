@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+/*
+
+isNaN()   判断是否为number型
+Number()  转换成number类型
+parseInt()   转换成整数型，向下取整
+Math.ceil()  转换成整数型，向上取整
+
+*/ 
+
+
+
+        function sum(x,y){
+            if(isNaN(x)||isNaN(y)){
+                alert("不行")
+            }else{
+            alert(Number(x)+Number(y))
+            }
+        }
+        var a="123.12哈哈哈";
+        var b=parseInt(a);
+        console.log(b);
+        console.log(Math.ceil(123.001));
+        console.log(10/3);
+
+    
+    </script>
+    <input type="button" value="求和" onclick="sum(1,2)">
+    <input type="button" value="求和" onclick="sum(1,'中')">
+    <input type="button" value="求和" onclick="sum(1,'20')">
+</body>
+</html>

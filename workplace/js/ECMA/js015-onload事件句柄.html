@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- <body onload="myonload()"> -->
+
+<body>
+
+    <script type="text/javascript">
+        //     function myonload(){
+        //     var but1Ele = document.getElementById("but1");
+        //     var but2Ele = document.getElementById("but2");
+        //     but1Ele.onclick = function () {
+        //         console.log("按钮1被点击");
+        //     }
+        //     but2Ele.onclick = function () {
+        //         console.log("按钮2被点击");
+        //     }
+
+        // }
+
+        window.onload = function () {
+            // var but1Ele = document.getElementById("but1");
+            // but1Ele.onclick = function () {
+            //     console.log("按钮1被点击");
+            // }
+            document.getElementById("but1").onclick = function () {
+                console.log("按钮1被点击");
+            }
+            // var but2Ele = document.getElementById("but2");
+            // but2Ele.onclick = function () {
+            //     console.log("按钮2被点击");
+            // }
+            document.getElementById("but2").onclick = function () {
+                console.log("按钮2被点击");
+            }
+
+        }
+
+
+
+
+    </script>
+    <input type="button" value="按钮1" id="but1">
+    <input type="button" value="按钮2" id="but2">
+
+
+
+</body>
+
+</html>

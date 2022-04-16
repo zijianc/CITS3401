@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        window.onload = function (y) {
+            document.getElementById("mytext").onkeydown=function(x){//x代表时间对象
+                    if (x.keyCode==13) {//13代表回车键
+                        console.log("正在登陆，请稍后")
+                    } else if(x.keyCode==27) {//27代表Esc键
+                        console.log("退出")
+                    }
+            }
+        }
+
+    </script>
+
+    id<input type="text" id="mytext">
+
+</body>
+
+</html>

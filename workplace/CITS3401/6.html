@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priorities</title>
+</head>
+<style>
+    #input {
+        background-color: blue;
+        margin-top: 20px;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #priority {
+        background-color: green;
+
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    li:hover{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+
+
+<script>
+    window.onload = function () {
+        var textEle = document.getElementById("text")
+        var butEle = document.getElementById("but")
+        var liEle=document.getElementsByTagName("li");
+
+        for(var i=0;i<liEle.length;i++){
+            
+            liEle[i].onclick=function(){
+                for(var i=0;i<liEle.length;i++){
+                var change=liEle[0].innerHTML;
+                liEle[0].innerHTML=liEle[i].innerHTML;
+                liEle[i].innerHTML=change;
+
+                }
+
+            }
+        }
+
+        // function changeOrder() {
+        //     for(var i=0;i<liEle.length;i++){
+        //         var change=liEle[0].innerHTML;
+        //         liEle[0].innerHTML=liEle[i].innerHTML;
+        //         liEle[i].innerHTML =change;  
+
+        //     }
+        // }
+
+
+    }
+
+
+
+
+</script>
+
+<body bgcolor="yellow">
+    <div id="input">
+
+        <input type="text" placeholder="Enter new priority here" id="text">
+        <input type="button" value="Add Priority" id="but">
+
+    </div>
+    <div id="priority">
+        Priority
+        <ol id="ol">
+            <li >Relex</li>
+            <li>Fnish Test</li>
+            <li>Do Group Test</li>
+            <li>Smash Exam</li>
+        </ol>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var arr = document.getElementsByName("hobby");
+            var first = document.getElementById("check");
+
+            first.onclick = function () {
+                for (var i = 0; i < arr.length; i++) {
+                    arr[i].checked = first.checked;
+                }
+            }
+
+            for (var i = 0; i < arr.length; i++) {
+                arr[i].onclick = function () {
+                    var count = arr.length;
+                    var checkedcount = 0;
+                    for (var i = 0; i < arr.length; i++) {
+                        if (arr[i].checked) {
+                            checkedcount++;
+                        }
+                    }
+                    first.checked=(count==checkedcount);
+                }
+            }
+
+        }
+
+
+    </script>
+
+
+
+
+    <input type="checkbox" id="check">
+    <br>
+    抽烟 <input type="checkbox" name="hobby" value="抽烟">
+    <br>
+    喝酒 <input type="checkbox" name="hobby" value="喝酒">
+    <br>
+    烫头 <input type="checkbox" name="hobby" value="烫头">
+    <br>
+</body>
+
+</html>

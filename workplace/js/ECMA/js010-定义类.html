@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        Emp = function(x,y,z){
+            this.name=x;
+            this.id=y;
+            this.sal=z;
+            this.work=function(){
+                console.log(this.name+"is working");
+            }
+        }
+        var a =new Emp();
+        a.work();
+        var a1=new Emp("czj");
+        a1.work();
+        var a2=new Emp(111,22,3);
+        a2.work();
+        Emp.prototype.getid=function(){
+            console.log(this.id);
+        }
+        a2.getid();
+        console.log(a2["id"])//访问一个对象还能用引用["属性名"];
+        
+    </script>
+
+</body>
+
+</html>

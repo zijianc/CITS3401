@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var a = "1";
+        console.log(typeof (a));
+    
+        var b = new String("2");
+        console.log(typeof (b));
+        //  length是属性
+        // charAt 获取指定下标位置的字符
+        // concat 连接字符串
+        // indexOf获取指定字符在该字符串第一次出现时的索引
+        // lastIndexof 获取指定字符在该字符串最后一次出现时的索引
+        //replace 替代方法
+        //split拆分字符串
+        //substr(startindex,length)
+        //substring(starindex,endindex)
+        //toUppercase
+        //toLowercase
+    
+        var b = "123456";
+        console.log(b.length);
+        console.log(b.indexOf(1))
+        console.log(b.replace(1, 2))
+        //concat
+        var c = "我是";
+        console.log(c.concat("帅哥"))
+        //split
+        var d = "2000-11-15";
+        var d1 = d.split("-");
+        for (var i = 0; i < d1.length; i++) {
+            console.log(d1[i]);
+        }
+    
+        //substr和substring 
+        var ff="123456";
+        console.log(ff.substr(0,2));//str第二个参数代表节选长度
+        console.log(ff.substring(0,3))
+    
+    
+    
+    </script>
+
+</body>
+
+</html>

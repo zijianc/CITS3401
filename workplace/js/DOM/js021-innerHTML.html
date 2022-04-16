@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    #div1{
+        background-color: blueviolet;
+        width: 400px;
+        border: 1px solid palevioletred;
+        height: 200px;
+
+    }
+</style>
+<body>
+    <script type="text/javascript">
+        window.onload=function(){
+            document.getElementById("but").onclick=function(){
+                //document.getElementById("div1").innerHTML="你好";
+                document.getElementById("div1").innerHTML="<font color='blue'>你好</font>";
+                //document.getElementById("div1").innerText="<font color='blue'>这只能输入普通文本</font>"
+            }
+        }
+
+
+    </script>
+
+
+    <input type="button" value="给div设置内容" id="but">
+
+    <div id="div1"></div>
+</body>
+</html>

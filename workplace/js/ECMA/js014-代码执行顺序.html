@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="myload()">
+    
+    <script type="text/javascript">
+        function myload(){
+        var mybtn= document.getElementById("mybtn");
+        // function sum(){
+        //     console.log("鼠标点击");
+        // }
+        // mybtn.onclick=sum;         //注意引用.onclick后面的方法不需要();
+            mybtn.onclick=function(){
+                console.log("鼠标点击");
+            }
+
+    }
+        </script>
+        <input type="button" value="按钮" id="mybtn">
+
+
+
+</body>
+
+</html>

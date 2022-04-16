@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Student(tittle,name,supervisor){
+            this.tittle=tittle;
+            this.name=name;
+            this.supervisor=supervisor;
+            this.origin=function(){
+                if(!this.supervisor)return this;
+                else return supervisor.origin();
+            }
+        }
+s1=new Student('prof.','Church');
+s2=new Student('prof.','Tring',s1);
+s3=new Student('prof.','Gandy',s2);
+
+Student.prototype.toString=function(){
+    return this.tittle+' '+this.name;
+}
+console.log(s3.origin().toString)
+    </script>
+</body>
+</html>
